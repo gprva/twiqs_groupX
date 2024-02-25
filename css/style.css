@@ -1,0 +1,160 @@
+html,body{
+	height: 100%;
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.clearfix::after{
+ clear: both;
+ content: "";
+ display: table;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+ul li:last-child{
+	margin-bottom: 0;
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+button,
+label{
+	cursor: pointer;
+}
+input,
+button,
+textarea{
+	background: none;
+	border: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	display: none;
+}
+input::placeholder {
+	color: inherit;
+}
+button{
+	cursor: pointer;
+}
+input, 
+textarea{
+	display: block;
+	resize: none;
+}
+body{
+	font-size: 14px;
+	line-height: 19px;
+	color: #242424;
+	width: 100%;
+	font-family: 'Manrope', arial, sans-serif;
+}
+.container{
+	max-width: 1325px;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.dn{
+	display: none;
+}
+section{
+	padding: 100px 0;
+}
+.sec_tit{
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 57px;
+	text-align: center;
+	margin: 0 auto;
+}
+.sec_txt{
+	font-size: 21px;
+	margin-bottom: 2%;
+}
+.hover{
+	transition: 0.3s;
+}
+.hover:hover{
+	color: #BE963F;
+}
+button {
+    cursor: pointer;
+}
+input, button, textarea {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.link{
+	transition: 0.3s;
+}
+.link:hover{
+	box-shadow: 0px 6px 5px 2px #836A36;
+}
+.flex{
+	display: flex;
+}
+.btn {
+	display: inline-block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	background: linear-gradient(180deg, #FFB800 0%, #FF8700 15.62%, #FF6B00 92.19%, #FF4D00 100%);
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 37px;
+	font-weight: 700;
+	font-size: 12px;
+	transition: 0.3s;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	width: 10%;
+  }
+  .btn::before{
+	content: '';
+	position: absolute;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+	width: 36px;
+	height: 115%;
+	top: -10%;
+	left: -100%;
+	transform: rotate(10deg);
+	animation: btn 10s linear infinite;
+  }
+  @keyframes btn{
+	0%{
+	}
+	90%{
+	  left: -100%;
+	}
+	100%{
+	  left: 100%;
+	}
+  }
+  .btn:hover {
+	background: linear-gradient(180deg, #FF4D00 0%, #FF6B00 15.62%, #FF8700 92.19%, #FFB800 100%);
+  }
